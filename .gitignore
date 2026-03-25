@@ -1,19 +1,22 @@
-# Bina dosyaları
-*.o
+# Build artifacts (source/object files in bin/)
+bin/*.o
+bin/*.cc
+bin/Makefile
+
+# Prebuilt shared libraries (.so) ARE tracked - do NOT ignore lib/
+# Static libraries (.a) are excluded (too large for GitHub, not needed at runtime)
 *.a
-*.so
-*.so.*
+
+# General build artifacts (outside lib/)
 *.dylib
 *.dll
 *.def
 *.res
-
-# Derleyici çıktıları
 *.gcno
 *.gcda
 *.exe
 
-# IDE ve editör dosyaları
+# IDE and editor files
 .vscode/
 .idea/
 *.swp
@@ -29,20 +32,19 @@ __pycache__/
 dist/
 build/
 
-# Node (eğer var ise)
+# Node
 node_modules/
 npm-debug.log
 
-# OS dosyaları
+# OS files
 Thumbs.db
 .directory
 
-# Build dizinleri
+# Build directories
 cmake-build-debug/
 cmake-build-release/
-build/
 out/
 
-# Log dosyaları
+# Log files
 *.log
 *.err
