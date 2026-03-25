@@ -1,0 +1,48 @@
+# Bina dosyaları
+*.o
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.def
+*.res
+
+# Derleyici çıktıları
+*.gcno
+*.gcda
+*.exe
+
+# IDE ve editör dosyaları
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Node (eğer var ise)
+node_modules/
+npm-debug.log
+
+# OS dosyaları
+Thumbs.db
+.directory
+
+# Build dizinleri
+cmake-build-debug/
+cmake-build-release/
+build/
+out/
+
+# Log dosyaları
+*.log
+*.err
